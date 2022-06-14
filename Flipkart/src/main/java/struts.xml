@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">  
+<struts>  
+<package name="default" extends="struts-default">  
+<action name="login" class="com.accounts.inter" method="login"></action>  
+<action name="users" class="com.accounts.inter" method="signup"></action>
+<action name="productdetails" class="com.product.Product" method="getProducts"></action>
+<action name="userprods" class="com.product.userprod" method="getuserproducts"></action>
+<action name="orders" class="com.product.order" method="getorderproducts"></action>
+<action name="adcarts" class="com.product.order" method="addcart"></action>
+<action name="userdetails" class="com.accounts.user" method="editprofile"></action>
+<action name="upduser" class="com.accounts.user2" method="updateprofile"></action>
+<action name="cartprod" class="com.product.cart" method="cartprods"></action>
+<action name="cartbuys" class="com.product.singlebuy" method="buyprod"></action>
+<action name="buyprods" class="com.product.buyprod" method="buyproduct"></action>
+</package>  
+</struts>      
